@@ -1,5 +1,8 @@
 fn main() {
     // You can optionally experiment here.
+    let array = [10, 20, 30, 40, 50];
+    let meu_slice = &array[0..3];
+    println!("Meu Slice: {:?}", meu_slice);
 }
 
 #[cfg(test)]
@@ -11,7 +14,7 @@ mod tests {
         // TODO: Get a slice called `nice_slice` out of the array `a` so that the test passes.
         // let nice_slice = ???
 
-        let nice_slice = &a[1..4];  
+        let nice_slice = &a[1..4];
 
         assert_eq!([2, 3, 4], nice_slice);
     }

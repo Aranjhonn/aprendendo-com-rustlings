@@ -32,3 +32,29 @@ compiler. In this section, we'll go through the most important ones.
 - **O Conceito:** O agrupamento de dados através de Tuplas.
 - **O Exercício 5 (Destruturação):** Tinha uma tupla mista `cat = ("Furry McFurson", 3.5)` e precisava desmembrá-la de uma vez só. Resolvido reatribuindo ela a "espelhos" (máscaras de extração de variáveis) no mesmo formato: `let (name, age) = cat;`.
 - **O Exercício 6 (Indexação Direta):** Caso eu não queira desempacotar toda a tupla como fizemos no exercício 5, para não encher a memória de lixo com a primeira posição se eu só quero a segunda, o Rust habilita a sintaxe focada: acessamos por ponto seguido do índice exato, ou seja, `let second = numbers.1;`.
+
+---
+
+## 🧪 Experimentos no `main()`
+
+**`primitive_types4.rs`**
+
+Criei meu próprio array e extraí um slice dele no `main` para ver o conceito em ação. O `{:?}` é necessário para imprimir coleções inteiras:
+```rust
+let array = [10, 20, 30, 40, 50];
+let meu_slice = &array[0..3];
+println!("Meu Slice: {:?}", meu_slice);
+// Saída: Meu Slice: [10, 20, 30]
+```
+
+**`primitive_types6.rs`**
+
+Criei uma tupla com 4 tipos completamente diferentes para provar que o Rust aceita tipos variados na mesma estrutura:
+```rust
+let tupla_tipos_variados = (171, true, "Johny", 4.20);
+println!("{}", tupla_tipos_variados.0); // 171
+println!("{}", tupla_tipos_variados.1); // true
+println!("{}", tupla_tipos_variados.2); // Johny
+println!("{}", tupla_tipos_variados.3); // 4.2
+```
+> **Curiosidade:** O `4.20` virou `4.2` na saída — o Rust remove zeros à direita desnecessários em `f64` automaticamente.

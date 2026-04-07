@@ -1,5 +1,10 @@
 fn main() {
     // You can optionally experiment here.
+    let tupla_tipos_variados = (171, true, "Johny", 4.20);
+    println!("{}", tupla_tipos_variados.0);
+    println!("{}", tupla_tipos_variados.1);
+    println!("{}", tupla_tipos_variados.2);
+    println!("{}", tupla_tipos_variados.3);
 }
 
 #[cfg(test)]
