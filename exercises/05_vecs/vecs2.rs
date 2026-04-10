@@ -23,16 +23,26 @@ fn vec_map(input: &[i32]) -> Vec<i32> {
     // by 2, but with iterator mapping instead of manually pushing into an empty
     // vector.
     // See the example in the function `vec_map_example` above.
-    input
-        .iter()
-        .map(|element| {
-            element * 2
-        })
-        .collect()
+    input.iter().map(|element| element * 2).collect()
 }
 
 fn main() {
     // You can optionally experiment here.
+    let dados = [1, 2, 3, 4, 5];
+
+    let resultado = vec_loop(&dados);
+
+    println!(
+        "O resultado da multiplicação por 2 usando a função vec_loop: {:?}",
+        resultado
+    );
+
+    let resultado = vec_map(&dados);
+
+    println!(
+        "O resultado da multiplicação por 2 usando a função vec_map: {:?}",
+        resultado
+    );
 }
 
 #[cfg(test)]

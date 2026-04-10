@@ -7,12 +7,13 @@ fn array_and_vec() -> ([i32; 4], Vec<i32>) {
 
     let v = vec![10, 20, 30, 40]; // Vector
     (a, v)
-
-
 }
 
 fn main() {
     // You can optionally experiment here.
+    let (a, v) = array_and_vec();
+    println!("O array fixo (Stack): {:?}", a);
+    println!("O vetor dinâmico (Heap): {:?}", v)
 }
 
 #[cfg(test)]

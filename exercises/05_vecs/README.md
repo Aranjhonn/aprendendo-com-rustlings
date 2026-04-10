@@ -29,3 +29,32 @@ the other useful data structure, hash maps, later.
 - **O que aprendi:** O Rust abraça as duas abordagens da programação para varrer listas e nós desenvolvemos ambas:
   1. **A forma Imperativa clássica:** Usando `for element in input`, pegamos item por item e socamos no nosso vector final de forma manual via `output.push(element * 2)`.
   2. **A forma Funcional/Declarativa:** Através da API de Iteradores, usamos `.iter().map(...)`. Esse método funciona como uma esteira de produção: usamos o *closure* (função anônima entre barras paralelas `|element|`) para multiplicar por `2` e, ao final de tudo, esmagamos a esteira dentro de um balde mágico usando o `.collect()`, convertendo todo aquele mapeamento num Vector novinho em folha!
+
+---
+
+## 🧪 Experimentos no `main()`
+
+**`vecs1.rs`**
+
+Neste experimento, exploramos a diferença visual entre um array (tamanho fixo na Stack) e um vector (dinâmico no Heap). Aprendemos a usar o formatador de debug `{:?}`:
+```rust
+let (a, v) = array_and_vec();
+println!("O array fixo (Stack): {:?}", a);
+println!("O vetor dinâmico (Heap): {:?}", v);
+```
+
+**`vecs2.rs`**
+
+Aqui comparamos as duas formas de processar coleções. O resultado é idêntico, mas a abordagem muda de imperativa para funcional:
+```rust
+let dados = [1, 2, 3, 4, 5];
+
+// Chamada clássica com loop
+let resultado = vec_loop(&dados);
+println!("Resultado vec_loop: {:?}", resultado);
+
+// Chamada moderna com iteradores (shadowing da variável resultado)
+let resultado = vec_map(&dados);
+println!("Resultado vec_map: {:?}", resultado);
+```
+> **Nota sobre Performance:** No Rust, usar iteradores com `.map()` e `.collect()` costuma ser tão performático quanto um loop manual, graças às "Zero-cost abstractions" (Abstrações de custo zero).
