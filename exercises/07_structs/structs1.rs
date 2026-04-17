@@ -13,6 +13,31 @@ struct UnitStruct;
 
 fn main() {
     // You can optionally experiment here.
+    let marrom = ColorRegularStruct {
+        green: 150,
+        red: 75,
+        blue: 0,
+    };
+
+    println!("Imprimindo cores: {}", marrom.green);
+    println!("Imprimindo cores: {}", marrom.red);
+    println!("Imprimindo cores: {}", marrom.blue);
+
+    println!("=======================");
+
+    let valores_tuple = ColorTupleStruct(150, 75, 0);
+
+    println!("Imprimindo valores Tuple: {}", valores_tuple.0);
+    println!("Imprimindo valores Tuple: {}", valores_tuple.1);
+    println!("Imprimindo valores Tuple: {}", valores_tuple.2);
+
+    println!("=======================");
+
+    let unit_struct = UnitStruct;
+
+    let mensagem = format!("{unit_struct:?}, Ainda estou aprendendo a usar");
+
+    println!("{} {}", mensagem, "e aprenderei em breve");
 }
 
 #[cfg(test)]
