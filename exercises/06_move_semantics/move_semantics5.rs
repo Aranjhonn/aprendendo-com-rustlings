@@ -20,5 +20,9 @@ fn main() {
 
     get_char(&data);
 
+    println!("Imprimindo 'data' {}", data);
+
     string_uppercase(data);
+
+    //println!("Tentando imprimir 'data' depois da chamadas {}", data); // Provocando Erro!
 }

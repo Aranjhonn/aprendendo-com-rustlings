@@ -28,7 +28,7 @@ O objetivo é aprender Rust de forma profunda e honesta, não apenas "passar nos
 | [03 - If](./exercises/03_if/README.md) | Controle de fluxo, `if` como expressão e tipos consistentes nos braços | ✅ Concluído |
 | [04 - Primitive Types](./exercises/04_primitive_types/README.md) | Booleanos, chars, arrays, slices e tuplas | ✅ Concluído |
 | [05 - Vecs](./exercises/05_vecs/README.md) | Vectors, iteradores, `.map()`, closures e `.collect()` | ✅ Concluído |
-| [06 - Move Semantics](./exercises/06_move_semantics/README.md) | Ownership, borrowing e referências | 🚧 Em progresso |
+| [06 - Move Semantics](./exercises/06_move_semantics/README.md) | Ownership, borrowing e referências | ✅ Concluído |
 | [07 - Structs](./exercises/07_structs/README.md) | Structs regulares, de tupla, unitárias e métodos com `impl` | 🚧 Em progresso |
 | [08 - Enums](./exercises/08_enums/README.md) | Enums com dados, pattern matching com `match` | 🚧 Em progresso |
 

@@ -7,6 +7,11 @@ fn fill_vec(mut vec: Vec<i32>) -> Vec<i32> {
 
 fn main() {
     // You can optionally experiment here.
+    let vetor1 = vec![1, 3, 5, 7, 9];
+
+    let vetor2 = fill_vec(vetor1);
+
+    println!("Vetor 1 {:?}", vetor2);
 }
 
 #[cfg(test)]
