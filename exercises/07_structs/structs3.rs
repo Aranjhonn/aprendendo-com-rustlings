@@ -39,6 +39,10 @@ impl Package {
 
 fn main() {
     // You can optionally experiment here.
+    let pacote = Package::new(String::from("Holanda"), String::from("Brasil"), 50);
+    println!("{:?}", pacote.is_international());
+
+    println!("{}", pacote.get_fees(5));
 }
 
 #[cfg(test)]

@@ -23,6 +23,15 @@ fn create_order_template() -> Order {
 
 fn main() {
     // You can optionally experiment here.
+    let molde = create_order_template();
+
+    let nova_order = Order {
+        name: String::from("Aranjhonn desenvolvedor_rust"),
+        count: 27,
+        ..molde
+    };
+
+    println!("{:?}", nova_order);
 }
 
 #[cfg(test)]
