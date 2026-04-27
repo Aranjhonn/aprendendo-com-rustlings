@@ -1,3 +1,4 @@
+#[derive(Debug)]
 struct Point {
     x: u64,
     y: u64,
@@ -58,6 +59,22 @@ impl State {
 
 fn main() {
     // You can optionally experiment here.
+    let mut state = State {
+        width: 5,
+        height: 5,
+        position: Point { x: 1, y: 2 },
+        message: String::from("Desenvolvedor Rust"),
+        color: (125, 25, 200),
+        quit: true,
+    };
+
+    state.process(Message::ChangeColor(100, 222, 50));
+
+    println!("{:?}", state.message);
+    println!("{:?}", state.color);
+    println!("{:?}", state.position.x);
+    println!("{:?}", state.position.y);
+    println!("{:?}", state.position);
 }
 
 #[cfg(test)]
