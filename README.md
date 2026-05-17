@@ -33,6 +33,7 @@ O objetivo é aprender Rust de forma profunda e honesta, não apenas "passar nos
 | [08 - Enums](./exercises/08_enums/README.md) | Enums com dados, pattern matching com `match` | ✅ Concluído |
 | [09 - Strings](./exercises/09_strings/README.md) | Diferenças entre `String` e `&str`, manipulação de texto | ✅ Concluído |
 | [10 - Modules](./exercises/10_modules/README.md) | Módulos, visibilidade (`pub`) e importações (`use`) | ✅ Concluído |
+| [11 - Hashmaps](./exercises/11_hashmaps/README.md) | Dicionários, inserção condicional e iteração | ✅ Concluído |
 
 ---
 
