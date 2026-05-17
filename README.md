@@ -31,6 +31,7 @@ O objetivo é aprender Rust de forma profunda e honesta, não apenas "passar nos
 | [06 - Move Semantics](./exercises/06_move_semantics/README.md) | Ownership, borrowing e referências | ✅ Concluído |
 | [07 - Structs](./exercises/07_structs/README.md) | Structs regulares, de tupla, unitárias e métodos com `impl` | ✅ Concluído |
 | [08 - Enums](./exercises/08_enums/README.md) | Enums com dados, pattern matching com `match` | ✅ Concluído |
+| [09 - Strings](./exercises/09_strings/README.md) | Diferenças entre `String` e `&str`, manipulação de texto | ✅ Concluído |
 
 ---
 
